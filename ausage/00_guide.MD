@@ -1,6 +1,6 @@
 ------------------------------------- 
 ng/sboot 포팅
------
+---
 git clone https://github.com/shekhargulati/spring-boot-maven-angular-starter.git uiserver-ng-sboot-starter
 git remote remove origin
 (수정) backend > uiserver-sboot변경(pom2군데,폴더명)
@@ -11,7 +11,7 @@ git remote remove origin
 
 ------------------------------------- 
 빌드/실행
------
+---
 	***주의 : uiserver-ng/node폴더에 node/npm 자동설치됨 (설치안되면 기존설치된nodejs의 모든 내용을 복사 + -Dskip.installnodenpm)
 mvn clean install -DskipTests -Dcheckstyle.skip
 java -jar uiserver-sboot/target/app.jar
@@ -20,7 +20,7 @@ http://localhost:8080/
 
 ------------------------------------- 
 ng-zorro starter 적용
------
+---
 mv uiserver-ng uiserver-ngzzz
 git clone https://github.com/NG-ZORRO/ng-zorro-universal-starter.git uiserver-ng
 cd uiserver-ng
@@ -36,7 +36,7 @@ http://localhost:4200/
 
 ------------------------------------- 
 git push
------
+---
 git remote add origin https://github.com/algorik5/uiserver-ng-sboot-starter.git
 git push -u origin master
 
