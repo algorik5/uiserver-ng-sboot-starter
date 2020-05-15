@@ -16,9 +16,16 @@ cd uiserver-ng
 ng serve
 http://localhost:4200/
 
+
+----------------------------------------------
+dev sboot (vscode)
 -----
-dev sboot
------
+왼쪽아래의 SPRING-BOOT DASHBOARD에서 Start클릭
+
+(사전준비) JAVA.HOME 환경변수 필수
+    Java Extension Pack 설치
+    Spring Boot Extension Pack 설치
+
 
 
 

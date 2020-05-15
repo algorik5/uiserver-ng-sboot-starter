@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<uiserver-sboot>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.shekhargulati.app.Application",
+            "projectName": "uiserver-sboot",
+            "args": ""
+        }
+    ]
+}
