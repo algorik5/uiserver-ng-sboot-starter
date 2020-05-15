@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>com.shekhargulati.starters.ngboot</groupId>
-            <artifactId>ui</artifactId>
+            <artifactId>uiserver-ng</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>

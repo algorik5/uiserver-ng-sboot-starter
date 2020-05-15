@@ -17,7 +17,7 @@
     <description>Spring Boot Angular Starter Project</description>
 
     <modules>
-        <module>ui</module>
+        <module>uiserver-ng</module>
         <module>uiserver-sboot</module>
     </modules>
 
@@ -27,7 +27,7 @@
         <java.version>1.8</java.version>
     </properties>
 
-    <scm>
+    <!-- <scm>
         <url>https://github.com/shekhargulati/spring-boot-maven-angular-starter/</url>
         <connection>scm:git:https://github.com/shekhargulati/spring-boot-maven-angular-starter.git</connection>
         <developerConnection>scm:git:git@github.com:shekhargulati/spring-boot-maven-angular-starter.git</developerConnection>
@@ -37,7 +37,7 @@
     <issueManagement>
         <system>GitHub Issues</system>
         <url>https://github.com/shekhargulati/spring-boot-maven-angular-starter/issues</url>
-    </issueManagement>
+    </issueManagement> -->
 
     <build>
         <pluginManagement>

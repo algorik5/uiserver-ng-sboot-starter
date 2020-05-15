@@ -7,7 +7,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>ui</artifactId>
+  <artifactId>uiserver-ng</artifactId>
 
   <properties>
     <main.basedir>${project.parent.basedir}</main.basedir>
