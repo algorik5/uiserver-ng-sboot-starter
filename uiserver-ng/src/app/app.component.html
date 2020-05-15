@@ -6,12 +6,15 @@
   <nz-layout>
     <nz-sider [nzWidth]="200" style="background:#fff">
       <ul nz-menu [nzMode]="'inline'" style="height:100%">
-        <li nz-menu-item routerLinkActive="ant-menu-item-selected">
-          <a title routerLink="table">
-            <span title><i nz-icon nzType="user"></i>Table</span>
-          </a>
-        </li>
-        <li nz-menu-item routerLinkActive="ant-menu-item-selected">
+
+        <li nz-menu-item routerLinkActive="ant-menu-item-selected"> <a title routerLink="yguide/dbtable"> <span title><i nz-icon nzType="user"></i>DB Table</span> </a> </li>
+
+
+        <li nz-menu-item routerLinkActive="ant-menu-item-selected"> <a title routerLink="table"> <span title><i nz-icon nzType="user"></i>Table</span> </a> </li>
+        <li nz-menu-item routerLinkActive="ant-menu-item-selected"> <a title routerLink="form"> <span title><i nz-icon nzType="laptop"></i>Form</span> </a> </li>
+        <li nz-menu-item routerLinkActive="ant-menu-item-selected"> <a title routerLink="page-header"> <span title><i nz-icon nzType="notification"></i>Page Header</span> </a> </li>
+
+        <!-- <li nz-menu-item routerLinkActive="ant-menu-item-selected">
           <a title routerLink="form">
             <span title><i nz-icon nzType="laptop"></i>Form</span>
           </a>
@@ -20,7 +23,7 @@
           <a title routerLink="page-header">
             <span title><i nz-icon nzType="notification"></i>Page Header</span>
           </a>
-        </li>
+        </li> -->
       </ul>
     </nz-sider>
     <nz-layout style="padding:0 24px 24px">

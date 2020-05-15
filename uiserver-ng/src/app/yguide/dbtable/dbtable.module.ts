@@ -7,12 +7,14 @@ import { ViewAleft1Component } from './view-aleft1.component';
 import { ViewAright1Component } from './view-aright1.component';
 import { ViewAright2Component } from './view-aright2.component';
 import { ViewAright3Component } from './view-aright3.component';
+import { SharedModule } from 'src/app/shared.module';
 
 
 @NgModule({
   declarations: [DbtableComponent, ViewAleft1Component, ViewAright1Component, ViewAright2Component, ViewAright3Component],
   imports: [
     CommonModule,
+    SharedModule,
     DbtableRoutingModule
   ]
 })

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NzButtonModule, NzGridModule, NzIconModule, NzLayoutModule, NzMenuModule } from 'ng-zorro-antd';
+import { NzButtonModule, NzGridModule, NzIconModule, NzLayoutModule, NzMenuModule, NgZorroAntdModule } from 'ng-zorro-antd';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NzCodeEditorModule } from 'ng-zorro-antd/code-editor';
 
 @NgModule({
   declarations: [],
@@ -12,7 +14,9 @@ import { NzButtonModule, NzGridModule, NzIconModule, NzLayoutModule, NzMenuModul
     NzMenuModule,
     NzButtonModule,
     NzIconModule,
-    NzGridModule
+    NzGridModule,
+    FormsModule,ReactiveFormsModule,
+    NgZorroAntdModule,NzCodeEditorModule 
   ]
 })
 export class SharedModule { }
