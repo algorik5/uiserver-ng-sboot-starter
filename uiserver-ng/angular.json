@@ -36,6 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -74,6 +75,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -130,7 +135,7 @@
           "builder": "@angular-devkit/build-angular:server",
           "options": {
             "outputPath": "dist/server",
-            "main": "src/main.server.ts",
+            "main": "server.ts",
             "tsConfig": "src/tsconfig.server.json"
           },
           "configurations": {
@@ -141,7 +146,34 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
+            ,              "optimization": true
+}
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "ng-zorro-universal-starter:build",
+            "serverTarget": "ng-zorro-universal-starter:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ng-zorro-universal-starter:build:production",
+              "serverTarget": "ng-zorro-universal-starter:server:production"
             }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "ng-zorro-universal-starter:build:production",
+            "serverTarget": "ng-zorro-universal-starter:server:production",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {}
           }
         }
       }

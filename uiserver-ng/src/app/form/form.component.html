@@ -47,9 +47,9 @@
             <i
               nz-icon
               nz-tooltip
-              nzTitle="What do you want other to call you"
-              type="question-circle"
-              theme="outline"
+              nzTooltipTitle="What do you want other to call you"
+              nzType="question-circle"
+              nzTheme="outline"
             ></i>
           </span>
         </nz-form-label>
@@ -100,7 +100,7 @@
           <nz-form-explain *ngIf="validateForm.get('captcha')?.dirty && validateForm.get('captcha')?.errors"
             >Please input the captcha you got!</nz-form-explain
           >
-          <nz-form-extra>We must make sure that your are a human.</nz-form-extra>
+          <!-- <nz-form-extra>We must make sure that your are a human.</nz-form-extra> -->
         </nz-form-control>
       </nz-form-item>
       <nz-form-item nz-row style="margin-bottom:8px;">

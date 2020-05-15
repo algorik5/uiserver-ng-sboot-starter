@@ -48,6 +48,7 @@ Thumbs.db
 /target
 /target-ui
 /node
-target
-target-ui
-node
+target/
+target-ui/
+node/
+bin/
