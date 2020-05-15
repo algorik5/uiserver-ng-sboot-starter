@@ -44,4 +44,6 @@ e2e/*.map
 Thumbs.db
 *.iml
 target-ui/
+logs/
+
 

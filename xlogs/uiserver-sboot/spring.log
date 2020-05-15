@@ -1,0 +1,61 @@
+2020-05-15 16:39:56.511  INFO 12448 --- [restartedMain] algo.Application                         : Starting Application on epo-kwak with PID 12448 (D:\project\kwakNG\uiserver-ng-sboot-starter\uiserver-sboot\target\classes started by epozen in d:\project\kwakNG\uiserver-ng-sboot-starter\uiserver-sboot)
+2020-05-15 16:39:56.512  INFO 12448 --- [restartedMain] algo.Application                         : No active profile set, falling back to default profiles: default
+2020-05-15 16:39:57.262  INFO 12448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 16:39:57.276  INFO 12448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2020-05-15 16:39:57.691  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-15 16:39:57.692  INFO 12448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-15 16:39:57.692  INFO 12448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-15 16:39:57.732  INFO 12448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-15 16:39:57.732  INFO 12448 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1215 ms
+2020-05-15 16:39:57.782  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2020-05-15 16:40:02.384  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2020-05-15 16:40:02.384  INFO 12448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2console'. Database available at 'jdbc:h2:file:d:/temp/h2db/h2testdb'
+2020-05-15 16:40:02.469  INFO 12448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-15 16:40:02.477  INFO 12448 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-15 16:40:02.502  INFO 12448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-15 16:40:02.503  INFO 12448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 16:40:02.516  INFO 12448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-15 16:40:02.557  INFO 12448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-05-15 16:40:02.559  INFO 12448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-05-15 16:40:02.561  INFO 12448 --- [restartedMain] util.Log                                 : ------------------- configureMessageBroker start # org.springframework.messaging.simp.config.MessageBrokerRegistry@529db4eb
+2020-05-15 16:40:02.642  WARN 12448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-15 16:40:02.685  INFO 12448 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-15 16:40:02.715  INFO 12448 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-15 16:40:02.721  INFO 12448 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-05-15 16:40:02.721  INFO 12448 --- [restartedMain] util.Log                                 : ------------------- registerWebSocketHandlers start # org.springframework.web.socket.config.annotation.WebMvcStompEndpointRegistry@6cd40185
+2020-05-15 16:40:02.725  INFO 12448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2020-05-15 16:40:02.763  INFO 12448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [META-INF/resources/index.html]
+2020-05-15 16:40:02.783  WARN 12448 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-15 16:40:02.861  INFO 12448 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-15 16:40:02.861  INFO 12448 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-15 16:40:02.869  INFO 12448 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-15 16:40:02.907  INFO 12448 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-05-15 16:40:02.909  INFO 12448 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-05-15 16:40:02.920  INFO 12448 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2020-05-15 16:40:02.920  INFO 12448 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-05-15 16:40:02.920  INFO 12448 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2020-05-15 16:40:02.934  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-15 16:40:02.934  INFO 12448 --- [restartedMain] algo.Application                         : Started Application in 6.472 seconds (JVM running for 2500.477)
+2020-05-15 16:40:02.937  INFO 12448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-05-15 16:40:12.938  INFO 12448 --- [Thread-58] util.Log                                 : 	 ***** COUNT #elapse=10   #gap=2         #count=2         #map={timer=2}#mapStr={}
+2020-05-15 16:40:22.940  INFO 12448 --- [Thread-58] util.Log                                 : 	 ***** COUNT #elapse=20   #gap=1         #count=3         #map={timer=3}#mapStr={}
+2020-05-15 16:40:32.940  INFO 12448 --- [Thread-58] util.Log                                 : 	 ***** COUNT #elapse=30   #gap=1         #count=4         #map={timer=4}#mapStr={}
+2020-05-15 16:40:42.941  INFO 12448 --- [Thread-58] util.Log                                 : 	 ***** COUNT #elapse=40   #gap=1         #count=5         #map={timer=5}#mapStr={}
+2020-05-15 16:40:52.941  INFO 12448 --- [Thread-58] util.Log                                 : 	 ***** COUNT #elapse=50   #gap=1         #count=6         #map={timer=6}#mapStr={}
+2020-05-15 16:41:02.727  INFO 12448 --- [MessageBroker-3] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 1, completed tasks = 6]
+2020-05-15 16:41:02.941  INFO 12448 --- [Thread-58] util.Log                                 : 	 ***** COUNT #elapse=60   #gap=1         #count=7         #map={timer=7}#mapStr={}
+2020-05-15 16:41:28.230  INFO 6016 --- [restartedMain] algo.Application                         : Starting Application on epo-kwak with PID 6016 (D:\project\kwakNG\uiserver-ng-sboot-starter\uiserver-sboot\target\classes started by epozen in d:\project\kwakNG\uiserver-ng-sboot-starter\uiserver-sboot)
+2020-05-15 16:41:28.236  INFO 6016 --- [restartedMain] algo.Application                         : No active profile set, falling back to default profiles: default
+2020-05-15 16:41:28.335  INFO 6016 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\epozen\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/epozen/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/epozen/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/epozen/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/epozen/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/epozen/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/epozen/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-05-15 16:41:28.335  INFO 6016 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\epozen\.m2\repository\com\oracle\ojdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/epozen/.m2/repository/com/oracle/ojdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2020-05-15 16:41:28.335  INFO 6016 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\epozen\.m2\repository\com\oracle\ojdbc\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/epozen/.m2/repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_core.jar,file:/C:/Users/epozen/.m2/repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_cert.jar,file:/C:/Users/epozen/.m2/repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/epozen/.m2/repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_cert.jar
+2020-05-15 16:41:28.336  INFO 6016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-15 16:41:28.336  INFO 6016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-15 16:41:30.278  INFO 6016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 16:41:30.325  INFO 6016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+2020-05-15 16:41:31.633  INFO 6016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-15 16:41:31.649  INFO 6016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-15 16:41:31.649  INFO 6016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-15 16:41:31.921  INFO 6016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-15 16:41:31.922  INFO 6016 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3586 ms
+2020-05-15 16:41:32.278  INFO 6016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...

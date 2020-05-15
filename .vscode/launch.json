@@ -7,15 +7,15 @@
         "url": "http://localhost:4200",
         "webRoot": "${workspaceFolder}"
     },
-        {
-            "type": "java",
-            "name": "sboot<uiserver-sboot>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "algo.Application",
-            "projectName": "uiserver-sboot",
-            "args": ""
-        }
+    {
+        "type": "java",
+        "name": "sboot<uiserver-sboot>",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "console": "internalConsole",
+        "mainClass": "algo.Application",
+        "projectName": "uiserver-sboot",
+        "args": ""
+    }
     ]
 }

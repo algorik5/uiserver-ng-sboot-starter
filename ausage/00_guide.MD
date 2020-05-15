@@ -36,7 +36,9 @@ ng-zorro starter 적용
 - proxy.conf.js
 - ng serve --proxy-config proxy.conf.js
 - http://localhost:4200/
-
+# sample 
+- yguide/dbtable
+- yguide/
 
 ------------------------------------- 
 sboot 적용 

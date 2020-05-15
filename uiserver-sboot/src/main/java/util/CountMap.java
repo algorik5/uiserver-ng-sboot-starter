@@ -17,7 +17,7 @@ public class CountMap {
 	
 	private static long total = 0;
     private static Map<String,Integer> map = new TreeMap<String,Integer>();
-    public static String toString2() { return "#total="+ ChangedCount.toString2() +"#"+ map; }
+    // public static String toString2() { return "#total="+ ChangedCount.toString2() +"#"+ map; }
     public static void addCount(String key,int value)
     {
     	total++;
@@ -40,6 +40,7 @@ public class CountMap {
     
     
     private static boolean started = false;
+	private static SimpleDateFormat formatSS = new SimpleDateFormat("ss");
     private synchronized static void startThread()
 	{
 		if(started == true) return;
@@ -52,13 +53,17 @@ public class CountMap {
     		{
     			try
     			{
-    				if(ChangedTime.changedTime(10000)==false) continue;//100(�ﰢ ���� üũ)
-    				
+    				// if(ChangedTime.changedTime(10000)==false) continue;//100(�ﰢ ���� üũ)
     				//ChangedCount.changedCount(total);
-    				if(ChangedCount.changedCount(total)==false) continue;
+    				// if(ChangedCount.changedCount(total)==false) continue;
     				
-    				
-    		        Log.log("\t ***** COUNT " +"#elapse="+ String.format("%-5d", stopwatch.elapsed(TimeUnit.SECONDS))+ ChangedCount.toString2() +"#map="+ map +"#mapStr="+ mapStr);
+					
+					Thread.sleep(1000);
+					String ss = formatSS.format(new Date());
+					if(ss.endsWith("00"))
+					{
+						Log.log("\t ***** COUNT " +"#elapse="+ String.format("%-5d", stopwatch.elapsed(TimeUnit.SECONDS))+ "#map="+ map +"#mapStr="+ mapStr);
+					}
 
     			}catch(Exception e){ e.printStackTrace(); }
 	    	}
