@@ -1,4 +1,4 @@
-package com.shekhargulati.app.api;
+package algo;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class PingResource {
+public class PingController {
 
     @GetMapping(path = "/ping")
     public ResponseEntity<Map<String, String>> ping() {
