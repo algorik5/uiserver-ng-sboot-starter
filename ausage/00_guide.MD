@@ -6,14 +6,14 @@ ng/sboot 포팅
 - (수정) backend > uiserver-sboot변경(pom2군데,폴더명)
 - (수정) ui > uiserver-ng (상동 + com.shekhargulati.starters.ngboot부분도 변경)
 - (수정) pom.xml - scm/issuemanage 주석
-- (수정) pom.xml - npm lint execution 주석
+- (수정) pom.xml - npm lint execution 주석,checkstyle 주석
 - (수정) ui-src > target-ui 변경 - pom.xml,package.json,gitignore추가
 
 ------------------------------------- 
 빌드/실행
 ---
-- 	***주의 : uiserver-ng/node폴더에 node/npm 자동설치됨 (설치안되면 기존설치된nodejs의 모든 내용을 복사 + -Dskip.installnodenpm)
-- mvn clean install -DskipTests -Dcheckstyle.skip
+- 	***주의 : uiserver-ng/node폴더에 node/npm 자동설치됨 (또는 기존설치된nodejs 복사 + -Dskip.installnodenpm)
+- mvn clean install -DskipTests -Dcheckstyle.skip (-Dskip.installnodenpm)
 - java -jar uiserver-sboot/target/app.jar
 - http://localhost:8080/
 
@@ -35,8 +35,21 @@ ng-zorro starter 적용
 - http://localhost:4200/
 
 ------------------------------------- 
+sboot 적용 
+---
+- pom.xml
+- application.properties
+- swagger
+- websocket 패키지
+- util 패키지
+
+
+
+
+
+------------------------------------- 
 git push
 ---
-- git remote add origin https://github.com/algorik5/uiserver-ng-sboot-starter.git
+- git remote add origin https://github.com/algo/uiserver-ng-sboot-starter.git
 - git push -u origin master
 

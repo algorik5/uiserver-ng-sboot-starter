@@ -8,14 +8,18 @@ ausage/00_guide.MD 참고
 - 
 
 # sboot
-- 
+- swagger/lombok/jpa/stomp
 
+# 샘플
+- db 조회
+- 차트
+- stomp샘플
 
 
 ----------------------------------------------
 start
 -----
-git clone https://github.com/algorik5/uiserver-ng-sboot-starter.git
+git clone https://github.com/algo/uiserver-ng-sboot-starter.git
 mvn clean install -DskipTests -Dcheckstyle.skip (주의 node install실패시 node복사 + -Dskip.installnodenpm)
 java -jar uiserver-sboot/target/app.jar
 http://localhost:8080/
