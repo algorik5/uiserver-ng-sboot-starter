@@ -1,4 +1,5 @@
 package algo;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -6,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import com.google.common.collect.ImmutableMap;
 import com.google.gson.Gson;
 
 import util.DateUtil;
@@ -24,12 +26,14 @@ public class HelloController {
 	public Map hello(@RequestParam(required=true,defaultValue="default") String msg) {
 		count++;
 		Log.log("------------------- hello start # "+ msg);
-		Map map = new LinkedHashMap();
-		map.put("count",count);
-		map.put("time",DateUtil.currentDate());
-		map.put("msg",msg);
+		// Map map = new LinkedHashMap();
+		// map.put("count",count);
+		// map.put("time",DateUtil.currentDate());
+		// map.put("msg",msg);
 		//String json = gson.toJson(map);
-	    //return json;
+		//return json;
+		
+		Map<String,Object> map = ImmutableMap.of("count",count,"time",DateUtil.currentDate(),"msg",msg);
 	    return map;
 	}
 

@@ -1,8 +1,15 @@
 {
     "configurations": [
+    {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Chrome",
+        "url": "http://localhost:4200",
+        "webRoot": "${workspaceFolder}"
+    },
         {
             "type": "java",
-            "name": "Spring Boot-Application<uiserver-sboot>",
+            "name": "sboot<uiserver-sboot>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",

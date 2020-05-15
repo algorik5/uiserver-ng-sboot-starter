@@ -32,7 +32,11 @@ ng-zorro starter 적용
 - npm install
 - ng update --all --force --allow-dirty (----실패시 rm yarn.lock package-lock.json -----node_modules)
 - ng serve
+# proxy
+- proxy.conf.js
+- ng serve --proxy-config proxy.conf.js
 - http://localhost:4200/
+
 
 ------------------------------------- 
 sboot 적용 
@@ -42,6 +46,7 @@ sboot 적용
 - swagger
 - websocket 패키지
 - util 패키지
+- http://localhost:8080/swagger-ui.html
 
 
 

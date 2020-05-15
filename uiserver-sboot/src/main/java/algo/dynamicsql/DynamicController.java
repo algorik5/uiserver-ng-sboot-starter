@@ -30,7 +30,7 @@ public class DynamicController {
 	 @Autowired
 	 private DynamicService dbService;
 
-	 
+	 //주의 - clob tostring >> to_chart(clob)
 	 @GetMapping("/dynamicSelect")
 	 @CrossOrigin(origins = "http://localhost:4200")
 	 public List<Map<String,Object>> dynamicSelect(@RequestParam(required=false,defaultValue="") String sql,@RequestParam(required=false,defaultValue="5") int rownum) throws Exception

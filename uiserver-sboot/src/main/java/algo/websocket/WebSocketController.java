@@ -61,9 +61,19 @@ public class WebSocketController {
 		//Log.log("\t --- hellotimer map # "+ map);
 		CountMap.addCount("timer",1);
 		
-		testappdata();
+		// testappdata();
 	}
 	
+
+
+
+
+
+
+
+
+
+	////////////////////////////////////////////////////////////// test data
 	private void testappdata()
 	{
 		List list = new ArrayList();
