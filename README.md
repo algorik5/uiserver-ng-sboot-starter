@@ -1,6 +1,6 @@
 
 
------
+----------------------------------------------
 start
 -----
 git clone https://github.com/algorik5/uiserver-ng-sboot-starter.git
@@ -9,8 +9,8 @@ java -jar uiserver-sboot/target/app.jar
 http://localhost:8080/
 
 
------
-dev ng
+----------------------------------------------
+dev ng (vscode)
 -----
 cd uiserver-ng
 ng serve
