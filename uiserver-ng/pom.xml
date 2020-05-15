@@ -17,7 +17,7 @@
   <build>
     <resources>
       <resource>
-        <directory>ui-src</directory>
+        <directory>target-ui</directory>
       </resource>
     </resources>
     <plugins>
@@ -45,7 +45,7 @@
               <arguments>install</arguments>
             </configuration>
           </execution>
-          <execution>
+          <!-- <execution>
             <id>npm lint</id>
             <goals>
               <goal>npm</goal>
@@ -53,7 +53,7 @@
             <configuration>
               <arguments>run lint</arguments>
             </configuration>
-          </execution>
+          </execution> -->
           <execution>
             <id>npm build</id>
             <goals>
