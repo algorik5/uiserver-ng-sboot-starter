@@ -1,3 +1,36 @@
+
+
+-----
+start
+-----
+git clone https://github.com/algorik5/uiserver-ng-sboot-starter.git
+mvn clean install -DskipTests -Dcheckstyle.skip (주의 node install실패시 node복사 + -Dskip.installnodenpm)
+java -jar uiserver-sboot/target/app.jar
+http://localhost:8080/
+
+
+-----
+dev ng
+-----
+cd uiserver-ng
+ng serve
+http://localhost:4200/
+
+-----
+dev sboot
+-----
+
+
+
+
+
+
+
+
+
+
+
+
 spring-boot-maven-angular-starter [![Build Status](https://travis-ci.org/shekhargulati/spring-boot-maven-angular-starter.svg?branch=master)](https://travis-ci.org/shekhargulati/spring-boot-maven-angular-starter)
 -----
 
